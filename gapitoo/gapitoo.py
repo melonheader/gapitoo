@@ -48,8 +48,8 @@ class gdservice:
         
         Args:
             file_path (str): Local path to the file to be uploaded.
-            drive_folder_id (str): ID of the destination folder in Google Drive.
-            drive_folder_url (str): URL of the destination folder in Google Drive.
+            drive_folder_id (str): ID of the destination folder on Google Drive.
+            drive_folder_url (str): URL of the destination folder on Google Drive.
         """
         if not drive_folder_id:
             if not drive_folder_url:
@@ -81,7 +81,8 @@ class gdservice:
         
         Args:
             file_id (str): ID of the file to be downloaded.
-            destination_path (str): Local path where the file will be saved.
+            drive_file_id (str): ID of the target file on Google Drive.
+            drive_file_url (str): URL of the target file on Google Drive.
         """
         if not drive_file_id:
             if not drive_file_urp:
