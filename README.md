@@ -1,6 +1,4 @@
 # gapitoo
-```markdown
-# Google Drive Service Package
 
 A lightweight Python package to interact with Google Drive. This package simplifies uploading and downloading files by encapsulating Google Drive API operations within a simple class structure.
 
