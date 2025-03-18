@@ -89,4 +89,3 @@ This project is licensed under the [MIT License](LICENSE).
 ## Disclaimer
 
 This package is provided "as is" without any warranty. Use it at your own risk.
-```

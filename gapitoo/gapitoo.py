@@ -76,7 +76,7 @@ class gdservice:
         print(f"{os.path.basename(file_path)} uploaded; File ID: {file.get('id')}")
         return file.get('id')
 
-    def download(self, destination_path: str, drive_file_id: str = None, drive_file_urp: str = None):
+    def download(self, destination_path: str, drive_file_id: str = None, drive_file_url: str = None):
         """Downloads a file from Google Drive.
         
         Args:
@@ -85,14 +85,14 @@ class gdservice:
             drive_file_url (str): URL of the target file on Google Drive.
         """
         if not drive_file_id:
-            if not drive_file_urp:
+            if not drive_file_url:
                 print("Provide either the file ID or the file URL")
                 return
             lhs = 'https://drive.google.com/file/d/'
             rhs = '/view?usp='
             pattern = rf'{re.escape(lhs)}([^/]+){re.escape(rhs)}'
             pattern = r'd/([^/]+)/view'
-            sstring = re.search(pattern, drive_file_urp)
+            sstring = re.search(pattern, drive_file_url)
             if sstring:
                 drive_file_id = sstring.group(1)
             else:
