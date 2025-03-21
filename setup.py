@@ -6,6 +6,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         'google-api-python-client',
+        'google-auth-oauthlib',
         'tqdm',
     ],
     author='ArtemB',
