@@ -42,7 +42,7 @@ Before using the package, ensure you have your Google API credentials:
 from gapitoo import gdservice
 
 # Initialize the Google Drive service
-drive = gdservice(creds_file='gcon/creds.json', token_file='token.pickle')
+drive = GDService(creds_file='gcon/creds.json', token_file='token.pickle')
 
 # Upload a file by providing the folder URL
 folder_url = f"https://drive.google.com/drive/folders/{YOUR_FOLDER_ID}?usp=sharing"
