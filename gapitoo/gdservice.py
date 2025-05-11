@@ -10,7 +10,7 @@ from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
 
 SCOPES = ['https://www.googleapis.com/auth/drive']
 
-class gdservice:
+class GDService:
     def __init__(self, creds_file: str = 'gcon/creds.json', token_file: str = 'token.pickle'):
         """Initializes the Google Drive service.
         
