@@ -13,7 +13,7 @@ A lightweight Python package to interact with Google Drive. This package simplif
 
    ```bash
    git clone https://github.com/melonheader/gapitoo.git
-   cd google-drive-service-package
+   cd gapitoo
    ```
 
 2. **Create a Virtual Environment (Optional):**
