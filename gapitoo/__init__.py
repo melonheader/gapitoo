@@ -1,1 +1,1 @@
-
+from .gdservice import GDService
